@@ -1,0 +1,78 @@
+# valentinesforjo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fef2f7;
+            color: #555;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #f44336;
+        }
+        .letter {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: none;
+            margin-top: 30px;
+        }
+        .button {
+            padding: 15px 30px;
+            background-color: #f44336;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #d32f2f;
+        }
+        .heart {
+            font-size: 2em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>To My BABYY ❤️</h1>
+    <p>Click the button below to read my special Valentine's letter to you.</p>
+
+    <button class="button" id="showLetterBtn">Show My Letter</button>
+
+    <div class="letter" id="letter">
+        <h2>Dear Ellie,</h2>
+        <p>I just wanted to take a moment and tell you how much you mean to me. You've brightened my life in ways I never imagined possible.</p>
+        <p>Your smile is my favorite thing in the world, and every day spent with you is a gift I treasure.</p>
+        <p>I love you more than words can say. i wanna ask u something babyy, will u be my valentines?? 💖</p>
+        <div class="heart">&#9829;</div>
+        <button class="button" id="showSecretBtn">Click for a Secret</button>
+
+        <div id="secretMessage" style="display:none; margin-top: 20px;">
+            <p>Every time I look at you, I feel like I’m the luckiest person alive. This is just the beginning of a lifetime of love!</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("showLetterBtn").addEventListener("click", function() {
+            document.getElementById("letter").style.display = "block";
+        });
+
+        document.getElementById("showSecretBtn").addEventListener("click", function() {
+            document.getElementById("secretMessage").style.display = "block";
+        });
+    </script>
+
+</body>
+</html>
